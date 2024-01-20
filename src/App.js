@@ -5,8 +5,10 @@ function App() {
   return (
     <div className="App">
        <h1>
-        cafe manager
-       </h1>
+        cafe manager code start consistency in real life
+        </h1>
+       
+      
     </div>
   );
 }

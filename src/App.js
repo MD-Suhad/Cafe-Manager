@@ -41,6 +41,7 @@ const App = () => {
       <ProductList addToCart={addToCart} />
       <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       <Navbar/>
+      <ProductList/>
     </div>
   );
 };

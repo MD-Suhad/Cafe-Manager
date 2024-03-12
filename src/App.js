@@ -18,8 +18,8 @@
 // export default App;
 // App.js
 import React, { useState } from 'react';
-import ProductList from './Components/ProductList';
-import Cart from './Components/Cart';
+import ProductList from './Components/Navbar/ProductList';
+import Cart from './Components/Navbar/Cart';
 import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
@@ -42,6 +42,18 @@ const App = () => {
       <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       <Navbar/>
       <ProductList/>
+      <div>
+      <h1>Welcome to Our Point of Sale System</h1>
+      <p>This is a simple Point of Sale system built with React.js.</p>
+      <p>Features:</p>
+      <ul>
+        <li>Add items to cart</li>
+        <li>View total</li>
+        <li>Complete transactions</li>
+      </ul>
+      <p>Get started by navigating to the transaction page.</p>
+      <a href="/transaction">Go to Transaction Page</a>
+    </div>
     </div>
   );
 };

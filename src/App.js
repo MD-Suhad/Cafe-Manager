@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ProductList from './Components/Navbar/ProductList';
 import Cart from './Components/Navbar/Cart';
 import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Home/Home';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -23,6 +24,7 @@ const App = () => {
       <ProductList addToCart={addToCart} />
       <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       <Navbar/>
+      <Home/>
       <ProductList/>
       <div>
       <h1>Welcome to Our Point of Sale System</h1>

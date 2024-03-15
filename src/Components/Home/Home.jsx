@@ -15,6 +15,7 @@ const Home = () => {
       <section>
         <h2>Welcome to Our Website</h2>
         <p>This is the main content of the homepage.</p>
+        <h1>this is rightClick on the website</h1>
       </section>
     </header>
    );

@@ -4,19 +4,11 @@ import "./Navbar.css";
 const Navbar = () => {
    return (
       <div>
-         <nav className="navbar">
+  
       <div className="navbar-brand">
-        <span className="navbar-item">POS System</span>
+        <span className="navbar-item">Z.A Pharma</span>
+        <p>Biswas Tower market, Kansat GopalNagar Mor Shibgong,Chapalnawabganj,Bangladesh</p>
       </div>
-      <div className="navbar-menu">
-        <div className="navbar-end">
-          <a href="/" className="navbar-item">Home</a>
-          <a href="/products" className="navbar-item">Products</a>
-          <a href="/cart" className="navbar-item">Cart</a>
-          <a href="/checkout" className="navbar-item">Checkout</a>
-        </div>
-      </div>
-    </nav>
       </div>
    );
 };

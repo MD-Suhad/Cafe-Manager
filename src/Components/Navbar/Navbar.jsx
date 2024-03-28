@@ -1,7 +1,16 @@
-import React from "react";
+import React , { useState } from "react";
 import "./Navbar.css";
+//import LoginButton from './LoginButton';
 
 const Navbar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    // Implement your login logic here, for example, setting a flag to indicate the user is logged in
+    setIsLoggedIn(true);
+  }
+
+
   return (
     <div>
       <div>
@@ -24,6 +33,13 @@ const Navbar = () => {
             Bangladesh
           </h3>
         </div>
+        <div>
+      {isLoggedIn ? (
+        <p>Welcome! You are logged in.</p>
+      ) : (
+        <button onLogin={handleLogin} Login />
+      )}
+    </div>
       </div>
     </div>
   );

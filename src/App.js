@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
+import Calender from './Components/Calender/Calender';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -20,6 +21,7 @@ const App = () => {
     <div className="App">
       <h1 >Right Click Solution</h1>
       <Navbar/>
+      <Calender/>
       <Home/>
     </div>
   );

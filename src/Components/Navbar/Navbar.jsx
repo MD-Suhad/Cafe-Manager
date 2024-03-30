@@ -37,7 +37,7 @@ const Navbar = () => {
       {isLoggedIn ? (
         <p>Welcome! You are logged in.</p>
       ) : (
-        <button onLogin={handleLogin} Login />
+        <button type="button" class="btn btn-success">Login</button>
       )}
     </div>
       </div>

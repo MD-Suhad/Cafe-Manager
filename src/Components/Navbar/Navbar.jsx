@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
-    // Implement your login logic here, for example, setting a flag to indicate the user is logged in
+    
     setIsLoggedIn(true);
   }
 

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
    return (
       <div>
-         <h3>footer part added</h3>
+         <h2>right click solution</h2>
       </div>
    );
 };

@@ -16,10 +16,6 @@ const Navbar = () => {
       <div>
         <div className="navbar-brand">
           <span className="navbar-item">Z.A Pharma</span>
-          <p>
-            Biswas Tower market, Kansat GopalNagar Mor
-            Shibgong,Chapalnawabganj,Bangladesh
-          </p>
         </div>
         <div className="navbar-right">
           <h3>Username :</h3>

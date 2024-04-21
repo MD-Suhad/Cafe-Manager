@@ -20,9 +20,10 @@ const App = () => {
   return (
     <div className="App">
       <h1 >Right Click Solution</h1>
+      <Home/>
       <Navbar/>
       <Calender/>
-      <Home/>
+      
     </div>
   );
 };

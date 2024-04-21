@@ -3,40 +3,34 @@ import "./Navbar.css";
 //import LoginButton from './LoginButton';
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleLogin = () => {
-    
-    setIsLoggedIn(true);
-  }
-
-
+  
   return (
     <div>
-      <div>
-        <div className="navbar-brand">
-          <span className="navbar-item">Z.A Pharma</span>
-        </div>
-        <div className="navbar-right">
-          <h3>Username :</h3>
-          <h3>Designation :</h3>
-          <h3>Department :</h3>
-          <h4>Logged on at : Logged on at: web Mar 06,2024 01:15pm</h4>
-        </div>
-        <div className="navbar-bottom">
-          <h3>
-            This ERP is Developed and Maintained By Lumineux Informatique
-            Bangladesh
-          </h3>
-        </div>
-        <div>
-      {isLoggedIn ? (
-        <p>Welcome! You are logged in.</p>
-      ) : (
-        <button type="button" class="btn btn-success">Login</button>
-      )}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-      </div>
+  </div>
+</nav>
     </div>
   );
 };

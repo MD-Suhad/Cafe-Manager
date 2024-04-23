@@ -8,10 +8,10 @@ const Calender = () => {
   return (
    <div className="calender-header">
          
-            <Calendar
+            {/* <Calendar
                 onChange={onChange}
                 value={value}
-            />
+            /> */}
         </div>
   );
 };

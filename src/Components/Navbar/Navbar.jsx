@@ -1,38 +1,49 @@
-import React , { useState } from "react";
-import "./Navbar.css";
-//import LoginButton from './LoginButton';
+import React from 'react';
+import { Link } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import SearchIcon from "@mui/icons-material/Search";
+import "./Navbar.css";import { pink } from "@mui/material/colors";
 
 const Navbar = () => {
-  
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+     <div className="text-center">
+      <div className="pt-4">
+        <Link style={{ textDecoration: "none", paddingRight:'10px', color:'black' }} to="/home">
+          HOME
+        </Link>
+        <Link style={{ textDecoration: "none", paddingRight:'10px', color:'black' }} to="/shop">
+          SHOP
+        </Link>
+        <Link style={{ textDecoration: "none", paddingRight:'10px',color:'black' }} to="/aura">
+          AURA
+        </Link>
+        <Link style={{ textDecoration: "none", paddingRight:'10px', color:'black' }} to="/blog">
+          BLOG
+        </Link>
+        <Link style={{ textDecoration: "none", paddingRight:'10px', color:'black' }} to="/partners">
+          OUR PARTNERS
+        </Link>
+        <Link style={{ textDecoration: "none", paddingRight:'10px', color:'black' }} to="/about">
+          ABOUT US
+        </Link>
+        <Link style={{ paddingRight: "10px" }}>
+          <AccountCircleIcon sx={{ color: pink[500] }} />
+        </Link>
+        <Link style={{ paddingRight: "10px" }}>
+          <FavoriteIcon sx={{ color: pink[500] }} />
+        </Link>
+        <Link style={{ paddingRight: "10px" }}>
+          <LocalMallIcon sx={{ color: pink[500] }} />
+        </Link>
+        <Link style={{ paddingRight: "10px" }}>
+          <SearchIcon sx={{ color: pink[500] }} />
+        </Link>
+      </div>
     </div>
-  </div>
-</nav>
     </div>
   );
 };
-
 export default Navbar;

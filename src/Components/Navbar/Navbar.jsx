@@ -14,7 +14,7 @@ const Navbar = () => {
         <h3>Admin</h3>
         <h4>demo@demo.com</h4>
         <h2>Shohaib@gmail.com</h2>
-        <img src="" alt="" />
+       
       </div>
     </div>
   );

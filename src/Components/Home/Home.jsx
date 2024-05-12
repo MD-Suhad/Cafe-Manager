@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      Right Click Solution
+      Right Click Solution Limited
     </div>
      
 

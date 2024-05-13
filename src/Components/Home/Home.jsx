@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      Right Click Solution Limited
+      <h1>Point of Sale Project</h1>
     </div>
      
 

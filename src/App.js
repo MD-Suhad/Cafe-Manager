@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Sidebar from './Components/Sidebar/Sidebarr';
@@ -19,17 +17,14 @@ const App = () => {
 
   return (
     <div  className="App">
-      <Router>
-      <Switch>
-        <Route exact path="/" component={Login} />
-        <Route path="/dashboard" component={Dashboard} />
-      </Switch>
-    </Router>
-     
 
+  
       <Navbar/>
       <Home/>
       <Sidebar/>
+     
+
+      
     
       
     </div>

@@ -1,5 +1,4 @@
 import {React,useState} from 'react';
-import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import './Login';
 const LoginPageContainer = styled.div`
@@ -43,7 +42,6 @@ const Button = styled.button`
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -51,7 +49,7 @@ const Login = () => {
     console.log('Username:', username);
     console.log('Password:', password);
     // On successful login, redirect to the dashboard
-    history.push('/dashboard');
+    // history.push('/dashboard');
   };
  
  

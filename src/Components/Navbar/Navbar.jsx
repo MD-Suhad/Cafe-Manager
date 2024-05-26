@@ -1,12 +1,13 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Login from '../Login/Login'
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Pos', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
-  { name: 'Login', href: '', current: false },
+  { name: 'Login', href: '/Login', current: false },
 ]
 
 function classNames(...classes) {

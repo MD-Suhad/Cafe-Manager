@@ -3,6 +3,9 @@ import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Sidebar from './Components/Sidebar/Sidebarr';
+import Login from './Components/Login/Login';
+import { BrowserRouter } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 const App = () => {
@@ -15,7 +18,8 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Sidebar/>
-     
+      <Link to = {user.id} >{user.name}</Link>
+      <Login></Login>
 
       
     

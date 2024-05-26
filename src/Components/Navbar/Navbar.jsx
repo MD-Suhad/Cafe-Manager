@@ -6,7 +6,7 @@ const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Pos', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
-  { name: 'Login', href: '/src/Components/Login/Login.jsx', current: false },
+  { name: 'Login', href: '', current: false },
 ]
 
 function classNames(...classes) {

@@ -19,7 +19,7 @@ const App = () => {
       <Home/>
       <Sidebar/>
       <Link to = {Login} >{Login}</Link>
-      <Login></Login>
+
 
       
     

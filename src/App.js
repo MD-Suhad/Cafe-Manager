@@ -18,7 +18,7 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Sidebar/>
-      <Link to = {Login} >{Login}</Link>
+      {/* <Link to = {Login} >{Login}</Link> */}
 
 
       

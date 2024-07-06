@@ -20,6 +20,7 @@ const App = () => {
       <Home/>
       <Sidebar/>
       <Dashboard/>
+      <Login/>
       {/* <Link to = {Login} >{Login}</Link> */}
 
 

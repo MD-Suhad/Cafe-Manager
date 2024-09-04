@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Pos', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
   { name: 'Login', href: '/Login', current: false },
-  // <Link>{Login}</Link>
+  <Link>{Login}</Link>
 ]
 
 function classNames(...classes) {
